@@ -46,7 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/CameraMovement.cs" />
+    <Compile Include="Assets/Scripts/DestroyOutOfBounds.cs" />
     <Compile Include="Assets/Scripts/MoveToObject.cs" />
+    <Compile Include="Assets/Scripts/Cop.cs" />
+    <Compile Include="Assets/Scripts/Minions.cs" />
+    <Compile Include="Assets/Scripts/Gate.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/home/liminal/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.dll</HintPath>

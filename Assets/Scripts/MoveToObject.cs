@@ -15,15 +15,10 @@ public class MoveToObject : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void FixedUpdate()
     {
-
+        if (target == null) return;
         if (Vector3.Distance(transform.position, target.position) <= maxDistance)
         {
             Vector3 direction = target.position - transform.position;

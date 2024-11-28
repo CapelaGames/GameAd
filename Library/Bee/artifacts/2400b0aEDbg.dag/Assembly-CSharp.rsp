@@ -349,6 +349,10 @@
 -analyzer:"/home/liminal/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/liminal/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraMovement.cs"
+"Assets/Scripts/Cop.cs"
+"Assets/Scripts/DestroyOutOfBounds.cs"
+"Assets/Scripts/Gate.cs"
+"Assets/Scripts/Minions.cs"
 "Assets/Scripts/MoveToObject.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
