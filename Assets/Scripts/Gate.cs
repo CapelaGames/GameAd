@@ -5,7 +5,7 @@ using TMPro;
 
 public class Gate : MonoBehaviour
 {
-    public TMP_Text text;
+    public TMP_Text texts;
     public int multiply = 1;
     public int add = 0;
 
@@ -15,11 +15,11 @@ public class Gate : MonoBehaviour
         if (choice == 0)
         {
             multiply = Random.Range(2, 5);
-            text.text = "x " + multiply.ToString();
+            text.text = x " + multiply.ToString();
         }
         else
         {
-            add = Random.Range(1, 5);
+            add = Random.Range(1, 5,);
             text.text = "+ " + add.ToString();
         }
     }

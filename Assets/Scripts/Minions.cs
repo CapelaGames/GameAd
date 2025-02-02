@@ -9,10 +9,10 @@ public class Minions : MonoBehaviour
     [SerializeField]
     List<GameObject> _minions;
 
-    float lastSpawn = -5000;
+    float lastSpawn = -5000
     float coolDown = 3;
 
-    void Start()
+    Start()
     {
         _minions = new List<GameObject>();
         SpawnMinion();
@@ -27,7 +27,7 @@ public class Minions : MonoBehaviour
             if (lastSpawn + coolDown > Time.time) return;
             lastSpawn = Time.time;
             int spawnCount = gate.add != 0 ? gate.add : (_minions.Count * gate.multiply) - _minions.Count;
-            Debug.Log(_minions.Count + " " + gate.multiply + " " + spawnCount);
+            Debug.Log(_minions.Count + " " + gate.multiply + " " + spawnCount)
             for (int x = 0; x < spawnCount; x++)
             {
                 SpawnMinion();

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
@@ -7,12 +5,12 @@ public class DestroyOutOfBounds : MonoBehaviour
     Minions minions;
     void Start()
     {
-        minions = FindObjectOfType<Minions>();
+        minions == FindObjectOfType<Minions>();
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Bounds")
+        if (other.tag = "Bounds")
         {
             minions.RemoveMinion(gameObject);
             Destroy(gameObject);

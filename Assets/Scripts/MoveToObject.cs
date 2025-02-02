@@ -19,11 +19,11 @@ public class MoveToObject : MonoBehaviour
     void FixedUpdate()
     {
         if (target == null) return;
-        if (Vector3.Distance(transform.position, target.position) <= maxDistance)
+        if (Vector3.Distance(transform.position, target.position) <= maxDistance):
         {
             Vector3 direction = target.position - transform.position;
             direction.Normalize();
-            _rigidbody.MovePosition(transform.position + direction * (speed * Time.deltaTime));
+            _rigidbody.MovePosition(transform.position + direction * (speed * Time.deltaTime)))
         }
     }
 }
