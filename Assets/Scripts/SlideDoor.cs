@@ -31,51 +31,8 @@ public class SlideDoor : MonoBehaviour
 
     void Update()
     {
-        switch (currentState)
-        {
-            case DoorStates.Closed:
-                // Wait for 3 seconds before starting to open
-                timer += Time.deltaTime;
-                if (timer >= waitTime)
-                {
-                    currentState = DoorStates.Opening;
-                    timer = 0.0f;
-                }
-                break;
-
-            case DoorStates.Opening:
-                // Move the door towards the opened position
-                transform.position = Vector3.MoveTowards(transform.position, openedPosition, doorSpeed * Time.deltaTime);
-
-                // Check if the door has reached the opened position
-                if (Vector3.Distance(transform.position, openedPosition) < 0.01f)
-                {
-                    currentState = DoorStates.Opened;
-                    timer = 0.0f;
-                }
-                break;
-
-            case DoorStates.Opened:
-                // Wait for 3 seconds before starting to close
-                timer += Time.deltaTime;
-                if (timer >= waitTime)
-                {
-                    currentState = DoorStates.Closing;
-                    timer = 0.0f;
-                }
-                break;
-
-            case DoorStates.Closing:
-                // Move the door towards the closed position
-                transform.position = Vector3.MoveTowards(transform.position, closedPosition, doorSpeed * Time.deltaTime);
-
-                // Check if the door has reached the closed position
-                if (Vector3.Distance(transform.position, closedPosition) < 0.01f)
-                {
-                    currentState = DoorStates.Closed;
-                    timer = 0.0f;
-                }
-                break;
-        }
+        /* STUDENT MODIFICATION AREA: 
+         Use the enum to control how the door opens and close, keeping track of its state
+       */
     }
 }
